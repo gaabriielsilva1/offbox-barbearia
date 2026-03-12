@@ -41,7 +41,7 @@ export function Gallery() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   return (
-    <section id="galeria" className="py-24 lg:py-32 bg-secondary">
+    <section id="galeria" className="min-h-screen flex items-center snap-start scroll-mt-16 lg:scroll-mt-20 py-20 bg-secondary">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">

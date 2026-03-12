@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @import 'tailwindcss';
 @import 'tw-animate-css';
 
@@ -121,7 +125,34 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  @keyframes scroll-dot {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+
+    30% {
+      opacity: 1;
+    }
+
+    70% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(16px);
+      opacity: 0;
+    }
+  }
+
+  .animate-scroll-dot {
+    animation: scroll-dot 2s infinite ease-in-out;
   }
 }

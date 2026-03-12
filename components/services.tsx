@@ -55,7 +55,7 @@ const services = [
 
 export function Services() {
   return (
-    <section id="servicos" className="py-24 lg:py-32 bg-background">
+    <section id="servicos" className="min-h-screen flex items-center snap-start scroll-mt-16 lg:scroll-mt-20 py-20 bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
@@ -72,16 +72,8 @@ export function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className={`group relative p-8 border transition-all duration-300 hover:border-primary ${service.featured
-                ? "border-primary bg-primary/5"
-                : "border-border bg-secondary hover:bg-secondary/50"
-                }`}
+              className="group relative p-8 border border-border bg-secondary transition-all duration-300 hover:border-primary hover:bg-secondary/50"
             >
-              {service.featured && (
-                <div className="absolute top-0 right-0 bg-primary text-primary-foreground text-xs tracking-wider px-3 py-1">
-                  POPULAR
-                </div>
-              )}
 
               <div className="w-12 h-12 bg-background border border-border flex items-center justify-center mb-6 group-hover:border-primary transition-colors">
                 <service.icon className="w-5 h-5 text-primary" />

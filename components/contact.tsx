@@ -18,7 +18,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "HORÁRIO",
-    content: "Seg a Sáb: 9h - 20h",
+    content: "Seg a Sáb: 10h - 20h",
     subtitle: "Dom: Fechado"
   }
 ]
@@ -35,7 +35,7 @@ const hours = [
 
 export function Contact() {
   return (
-    <section id="contato" className="py-24 lg:py-32 bg-secondary">
+    <section id="contato" className="min-h-screen flex items-center snap-start scroll-mt-16 lg:scroll-mt-20 py-20 bg-secondary">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left Column */}
@@ -49,7 +49,6 @@ export function Contact() {
 
             <p className="text-muted-foreground leading-relaxed mb-12">
               Agende pelo WhatsApp ou passe aqui pra conhecer.
-              A primeira cerveja é por nossa conta.
             </p>
 
             {/* Contact Info */}

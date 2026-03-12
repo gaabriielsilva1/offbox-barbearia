@@ -1,9 +1,9 @@
 import Link from "next/link"
-import { Instagram, Youtube, Music2 } from "lucide-react"
+import { Instagram } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="py-12 bg-background border-t border-border">
+    <footer className="py-12 bg-background border-t border-border snap-start">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           {/* Logo */}
@@ -31,24 +31,6 @@ export function Footer() {
               aria-label="Instagram"
             >
               <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="YouTube"
-            >
-              <Youtube className="w-5 h-5" />
-            </a>
-            <a
-              href="https://spotify.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Spotify"
-            >
-              <Music2 className="w-5 h-5" />
             </a>
           </div>
         </div>

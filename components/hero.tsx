@@ -5,7 +5,7 @@ import { ArrowRight, Scissors } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden snap-start">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -57,7 +57,7 @@ export function Hero() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-border text-foreground hover:bg-secondary font-medium tracking-wider h-14 px-8 w-full sm:w-auto"
+                className="border-border text-foreground hover:bg-primary hover:text-primary-foreground hover:border-primary font-medium tracking-wider h-14 px-8 w-full sm:w-auto transition-colors duration-300"
               >
                 CONHECER SERVICOS
               </Button>
@@ -83,9 +83,12 @@ export function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
-        <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-primary rounded-full animate-bounce" />
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
+        <span className="text-[10px] tracking-[0.4em] text-muted-foreground uppercase opacity-80">
+          Scroll
+        </span>
+        <div className="w-[26px] h-[44px] border-2 border-primary/40 rounded-full flex items-start justify-center p-2 bg-background/20 backdrop-blur-sm">
+          <div className="w-1 h-2 bg-primary rounded-full animate-scroll-dot" />
         </div>
       </div>
     </section>
