@@ -17,7 +17,7 @@ const bebasNeue = Bebas_Neue({
 
 export const metadata: Metadata = {
   title: 'OffBox Barbearia | Fora da Caixa',
-  description: 'Barbearia alternativa com cortes sérios e estilo único. Rock, punk, eletrônico, funk - todas as vibes, um só lugar.',
+  description: 'A barbearia que vai além do básico e traz uma nova experiência para quem busca estilo e atitude. Arte, design e personalidade fora da caixa.',
   keywords: ['barbearia', 'corte masculino', 'barba', 'alternativo', 'rock', 'punk', 'eletrônico', 'funk'],
   icons: {
     icon: [
